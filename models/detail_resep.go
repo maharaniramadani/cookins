@@ -1,7 +1,11 @@
 package models
 
-type DetailResep struct{
-	IdResep int   
-	Title string
+import "gorm.io/gorm"
+
+type DetailResep struct {
+	gorm.Model
+	ID          int
+	IdResep     int
+	Title       string
 	Deskription string
 }
